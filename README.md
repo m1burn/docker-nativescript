@@ -40,5 +40,5 @@ If execution of 'tns run android' is too slow for you, you can use awesome Nativ
     
 After that, everytime you change your application code, NativeScript CLI will automatically re-deploy only modified files to your device.
 
-Known limitations:
+## Known limitations
 At the moment, the image doesn't supposed to work with emulator. It able to work only with physical devices. I hope, I'll remove this limitation in near future.
