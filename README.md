@@ -27,6 +27,8 @@ If you want to build the image from Dockerfile, it is pretty easy to do.
 ## How to use it
 Connect your Android device to computer through USB cable and make sure that you allowed debugging for that device. After that, try the following.
 
+    mkdir nativescript-projects
+    cd nativescript-projects
     tns create foo
     cd foo
     tns platform add android
