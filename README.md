@@ -1,6 +1,5 @@
 # Docker image for [NativeScript](https://www.nativescript.org/) CLI
 
-## Description
 NativeScript installation is pretty easy, but anyhow it requires some additional steps. Most people (and I'm one of them) just want to execute one single command and start working. And Docker is the right thing to do it. So why shouldn't be there an image for NativeScript CLI?
 
 ## Setup
