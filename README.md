@@ -1,4 +1,4 @@
-# Docker image for NativeScript CLI
+# Docker image for [NativeScript](https://www.nativescript.org/) CLI
 
 ## Description
 NativeScript installation is pretty easy, but anyhow it requires additional steps. Most of people (and I'm one of them) just want to execute a one single command and start to work. And Docker is the right thing to do it. So why there shouldn't be an image for NativeScript CLI?
@@ -14,7 +14,7 @@ The alias lets you to use 'tns' command. Otherwise, you have to type full comman
 Also, I recommened to add the alias to ~/.bashrc file. Otherwise, if you close your terminal, you'll have to retype the alias again.
 To add the alias to ~/.bashrc file, execute the command bellow.
 
-    echo "alias tns=\"docker run -it --rm --privileged -v /dev/bus/usb:/dev/bus/usb -v $PWD:/home/nativescript m1burn/nativescript tns\"" >> ~/.bashrc
+    echo "alias tns='docker run -it --rm --privileged -v /dev/bus/usb:/dev/bus/usb -v \$PWD:/home/nativescript m1burn/nativescript tns'" >> ~/.bashrc
 
 ## Build
 If you want to build the image from Dockerfile, it is pretty easy to do.
@@ -41,6 +41,8 @@ If execution of 'tns run android' is too slow for you, you can use awesome Nativ
     tns livesync --watch
     
 After that, everytime you change your application code, NativeScript CLI will automatically re-deploy only modified files to your device.
+
+Please note, that when you run command 'tns', it will try to create hidden directories (.local, .npm, .oracle_jre_usage) in your current directory. These directories are created by NativeScript CLI to keep it's settings. So, It would be better if you would run the command in special directory for NativeScript projects (even the first command 'tns create'). It can help you to avoid messing these hidden directories and your own local directories.
 
 ## Known limitations
 At the moment, the image doesn't supposed to work with emulator. It able to work only with physical devices. I hope, I'll remove this limitation in near future.
