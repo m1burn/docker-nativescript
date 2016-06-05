@@ -14,7 +14,7 @@ The alias lets you to use 'tns' command. Otherwise, you have to type full comman
 Also, I recommened to add the alias to ~/.bashrc file. Otherwise, if you close your terminal, you'll have to retype the alias again.
 To add the alias to ~/.bashrc file, execute the command bellow.
 
-    echo alias tns='docker run -it --rm --privileged -v /dev/bus/usb:/dev/bus/usb -v $PWD:/home/nativescript m1burn/nativescript tns' >> ~/.bashrc
+    echo "alias tns=\"docker run -it --rm --privileged -v /dev/bus/usb:/dev/bus/usb -v $PWD:/home/nativescript m1burn/nativescript tns\"" >> ~/.bashrc
 
 ## Build
 If you want to build the image from Dockerfile, it is pretty easy to do.
