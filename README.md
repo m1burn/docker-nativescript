@@ -22,7 +22,7 @@ If you want to build the image from Dockerfile, it is pretty easy to do.
     docker build -t nativescript .
 
 ## How to use it
-Connect your Android device to computer through a USB cable and make sure that you are [allowed to debug that device](https://developer.android.com/training/basics/firstapp/running-app.html). After that, try the following.
+Connect your Android device to computer through a USB cable and make sure that you are [allowed to debug that device](https://developer.android.com/studio/run/device.html). After that, try the following.
 
     mkdir nativescript-projects
     cd nativescript-projects
