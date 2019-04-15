@@ -42,4 +42,4 @@ After that everytime you change your application code NativeScript CLI will auto
 Please note that when you run command 'tns', it will try to create hidden directories (.local, .npm, .oracle_jre_usage) in your current directory. These directories are created by NativeScript CLI to keep it's settings. So it would be better if you choose to run this command in a special directory for NativeScript projects (even the first command 'tns create'). It can help you to avoid mixing these hidden directories with your own local directories.
 
 ## Known limitations
-At the moment this image isn't supposed to work with an emulator. It is able to work only with physical devices. I hope I'll remove this limitation in the near future.
+At the moment this image isn't supposed to work with an emulator. It is able to work only with physical devices.
